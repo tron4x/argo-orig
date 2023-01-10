@@ -135,7 +135,7 @@ configs:
     # dex.config: |
     #   connectors:
     #     # GitHub example
-    #     - type: github
+    #     - : github
     #       id: github
     #       name: GitHub
     #       config:
@@ -1135,7 +1135,7 @@ redis:
       #   memory: 32Mi
     service:
       # -- Metrics service type
-      type: ClusterIP
+      type: NodePort
       # -- Metrics service clusterIP. `None` makes a "headless service" (no virtual IP)
       clusterIP: None
       # -- Metrics service annotations
